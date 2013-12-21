@@ -32,6 +32,11 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+#imageScraper
+gem 'image_scraper'
+
+#image downloader 
+gem 'exifr'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
