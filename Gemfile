@@ -41,6 +41,8 @@ gem 'exifr'
 #redis database
 gem "redis"
 
+#Flickr API Call Directly
+gem 'flickraw'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
