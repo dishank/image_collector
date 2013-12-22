@@ -1,6 +1,12 @@
 class SearchController < ApplicationController
 	def index
 		queryString = params[:url].to_s
+		if(redis.exists(params[:url])
+			
+				@responseJSON = redis.get(params[:url])
+				render "search/hi"
+		end
+		
 		imgoogle = ImageScraper::Client.new("https://www.google.com/search?site=&tbm=isch&q=#{params[:url]}")
 		imFlickr = ImageScraper::Client.new("http://www.flickr.com/search/?q=#{params[:url]}")
 		
