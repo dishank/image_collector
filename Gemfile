@@ -37,6 +37,10 @@ gem 'image_scraper'
 
 #image downloader 
 gem 'exifr'
+
+#redis database
+gem "redis"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
