@@ -40,7 +40,7 @@ class SearchController < ApplicationController
 
 		redis.set(queryString, @responseJSON)
 
-		render "search/hi"
+		render @responseJSON
 		
 	end  
 end
