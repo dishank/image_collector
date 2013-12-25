@@ -2,7 +2,7 @@ class SearchController < ApplicationController
 	def index
 		queryString = params[:url].to_s
 		#redis check
-		if(redis.exists(params[:url])                        
+		if(redis.exists(params[:url]))                      
             @responseJSON = redis.get(params[:url])
             render "search/hi"
         end	
